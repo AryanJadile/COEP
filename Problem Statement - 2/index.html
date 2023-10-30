@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img5.webp">
+    <title>Chandrayan 3 Project</title>
+</head>
+<body>
+    <div id="home">
+
+        <nav>
+            <a href="#"><img src="./assets/logo2.ico" alt="logo"> </a>
+    
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#discover">Discover</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <div class="slide effect">
+                <div class="slideNum">1/4</div>
+                <img src="./assets/isro_ch3.jpg" class="slide-img">
+            </div>
+
+            <div class="slide effect">
+                <div class="slideNum">2/4</div>
+                <img src="./assets/img7.jpg" class="slide-img">
+            </div>
+
+            <div class="slide effect">
+                <div class="slideNum">3/4</div>
+                <img src="./assets/chandryaan3.avif" class="slide-img">
+            </div>
+
+            <div class="slide effect">
+                <div class="slideNum">4/4</div>
+                <img src="./assets/img6.jpg" class="slide-img">
+            </div>
+
+            <a class="prev" onclick="nextSlide(-1)">&#10094</a>
+            <a class="next" onclick="nextSlide(1)">&#10095</a>
+            
+        </div>
+        <br>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </div>
+
+    <div class="timeline-heading">
+        <h1>Timeline</h1>
+    </div>
+
+    
+    <div class="parent" id="timeline">
+        
+        <div class="child1">
+            <h2 class="date">Dates</h2>
+            <ul>
+                <li id="l1">September 22, 2023</li>
+                <li id="l2">September 04, 2023</li>
+                <li id="l3">August 31, 2023</li>
+                <li id="l4">August 28, 2023</li>
+                <li id="l5">August 24, 2023</li>
+                <li id="l6">August 23, 2023</li>
+                <li id="l7">August 17, 2023</li>
+                <li id="l8">August 05, 2023</li>
+                <li id="l9">July 14, 2023</li>
+                <li id="l10">July 06, 2023</li>
+            </ul>
+    
+        </div>
+        <div class="child2">
+            <h2 class="event">Events</h2>
+            <ul>
+                <li>Efforts to establish communication with lander and rover are underway.</li>
+                <li>The lander and rover are in sleep mode. Awaiting their awakening around September 22, 2023.</li>
+                <li>ILSA listens to the movements around the landing site<br>
+                    RAMBHA-LP on-board Chandrayaan-3 measures near-surface plasma content</li>
+                <li>LIBS confirms the presence of Sulphur (S) on the lunar surface through unambiguous in-situ measurements.</li>
+                <li><b>Chandrayaan-3 ROVER: Made in India. Made for the MOON! The Ch-3 Rover ramped down from the Lander and India took a walk on the moon ! More updates soon.</b></li>
+                <li><span>'I reached my destination and you too!': Chandrayaan-3
+                    Chandrayaan-3 has successfully soft-landed on the moon. Congratulations, India!</span></li>
+                <li>Lander Module is successfully separated from the Propulsion Module. Deboosting planned for August 18, 2023</li>
+                <li>Chandrayaan-3 is successfully inserted into the lunar orbit. The orbit achieved is 164 km x 18074 km, as intended.</li>
+                <li>LVM3 M4 vehicle successfully launched Chandrayaan-3 into orbit. Chandrayaan-3, in its precise orbit, has begun its journey to the Moon. Health of the Spacecraft is normal.</li>
+                <li>The launch is scheduled for July 14, 2023, at 14:35 Hrs. IST from the Second Launch Pad, SDSC-SHAR, Sriharikota.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="discover" class="body1">
+
+        <div class="dis">
+            <h1>Discover the Chandrayaan</h1>
+            <p>Chandrayaan-3 is a follow-on mission to Chandrayaan-2 to demonstrate end-to-end capability in safe landing and roving on the lunar surface.
+                It consists of Lander and Rover configuration.It will be launched by LVM3 from SDSC SHAR, Sriharikota.
+                The propulsion module has Spectro-polarimetry of Habitable Planet Earth (SHAPE) payload to study the spectral and Polari metric measurements of Earth from the lunar orbit.
+            </p>
+            
+        </div>
+        <br>
+        <br>
+        <div class="dis2">
+            <p>
+                <b><span>Lander Payloads: </span></b>Chandra’s Surface Thermophysical Experiment (ChaSTE) to measure the thermal conductivity and temperature; Instrument for Lunar Seismic Activity (ILSA) for measuring the seismicity around the landing site; Langmuir Probe (LP) to estimate the plasma density and its variations. A passive Laser Retroreflector Array from NASA is accommodated for lunar laser ranging studies.
+            </p>
+            <p>
+                <b><span>Rover payloads: </span></b>Alpha Particle X-ray Spectrometer (APXS) and Laser Induced Breakdown Spectroscope (LIBS) for deriving the elemental composition in the vicinity of landing site.
+            </p>
+        </div>
+        <div class="dis3">
+            <p>
+                Chandrayaan-3 consists of an indigenous Lander module (LM), Propulsion module (PM) and a Rover with an objective of developing and demonstrating new technologies required for Inter planetary missions. The Lander will have the capability to soft land at a specified lunar site and deploy the Rover which will carry out in-situ chemical analysis of the lunar surface during the course of its mobility. The Lander and the Rover have scientific payloads to carry out experiments on the lunar surface. The main function of PM is to carry the LM from launch vehicle injection till final lunar 100 km circular polar orbit and separate the LM from PM. Apart from this, the Propulsion Module also has one scientific payload as a value addition which will be operated post separation of Lander Module. The launcher identified for Chandrayaan-3 is LVM3 M4 which will place the integrated module in an Elliptic Parking Orbit (EPO) of size ~170 x 36500 km.
+            </p>
+            <H3>The Mission objectives</H3>
+            <ol >
+                <li>1.To demonstrate Safe and Soft Landing on Lunar Surface</li>
+                <li>2.To demonstrate Rover roving on the moon and</li>
+                <li>3.To conduct in-situ scientific experiments.</li>
+            </ol>    
+        </div>
+
+        <h1 class="tech">Advanced technologies used in Chandrayaan-3</h1>
+
+        <div class="photos">
+
+            <img src="./assets/img1.png" alt="" class="pic">
+   
+            <img src="./assets/img2.png" alt="" class="pic">
+   
+            <img src="./assets/img3.png" alt="" class="pic">
+
+    </div>
+
+    </div>
+
+    <footer>
+        <p>&#169;2023 Chandrayaan-3 Project</p>
+    </footer>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

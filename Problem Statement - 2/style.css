@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("./assets/bgimg.jpg"); */
+}
+
+nav{
+    width: 95vw;
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 400px;
+    height: 60px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 200px;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: gray;
+    border-radius: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#timeline{
+    width: 100vw;
+    height: auto;
+}
+
+#discover{
+    width: 100vw;
+    height: auto;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* image carousel */
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.slide{
+    display: none;
+}
+
+.slideNum{
+    position: absolute;
+    color: aliceblue;
+    top: 0;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.slide-img{
+    width: 100%;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -20px;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5px ease;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover , .next:hover{
+    background-color: gray;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: bisque;
+    transition: background-color 0.5 ease;
+}
+
+.dots{
+    text-align: center;
+}
+
+.active , .dot:hover{
+    background-color: azure;
+}
+
+.effect{
+    animation-name: effect;
+    animation-duration: 1.0s;
+}
+
+@keyframes effect {
+    from {opacity: 0.4;}
+    to {opacity: 1.0;}
+}
+
+/* Timeline */
+
+
+.parent{
+    display: flex;
+    flex-direction: row;
+}
+.child1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
+    height: 50%;
+    font-size: medium;
+    color: whitesmoke;
+    
+    
+}
+.child2{
+    color: antiquewhite;
+    background-color: black;
+    width: 50%;
+    height: 45%;
+    font-weight: 600;
+    font-size: medium;
+    text-align: left;
+    
+}
+.child2 ul{
+    padding-top: 25px;
+    font-size: 1.4vw;
+}
+.child1 ul{
+    padding-top: 25px;
+    font-size: 1.6vw;
+}
+li{
+    list-style-type: none;
+}
+.child1 li{
+    margin-left: 12vw;
+    font-size: auto;
+    /* line-height: 90px; */
+    padding: 20px;
+}
+.child2 li{
+    padding: 20px;
+    /* font-size: 1.4vw; */
+    /* line-height: auto; */
+}
+
+.date, .event{
+    text-align: center;
+}
+/* span{
+    background-color: rgb(86, 86, 102); */
+/* } */
+#l2{
+    padding-top: 50px;
+}
+#l3{
+    padding-top: 50px;
+}
+#l4{
+    padding-top: 57px;
+}
+#l5{
+    padding-top: 60px;
+}
+#l6{
+    padding-top: 65px;
+}
+#l7{
+    padding-top: 47px;
+}
+#l8{
+    padding-top: 50px;
+}
+#l9{
+    padding-top: 54px;
+}
+#l10{
+    padding-top: 55px;
+}
+.child1 li:hover{
+    color: rgb(127, 255, 202);
+}
+.child2 li:hover{
+    background-color: rgb(108, 101, 115);
+}
+
+.timeline-heading{
+    margin-top: 100px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.5vw;
+    color:aliceblue;
+    text-decoration: underline;
+}
+
+
+/* discover */
+
+.body1{
+    background-color: grey;
+    font-family:'Lucida Grande';
+    color: black;
+    border-radius: 10px;
+}
+.dis h1{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+}
+.dis p{
+    text-align: center;
+    padding-top: 45px;
+    font-size: large;
+
+}
+.dis2 p{
+    font-size: medium;
+    margin-left: 25px;
+}
+.dis2 span{
+    color: brown;
+}
+.dis3 p{
+    margin-left: 20px
+}
+.dis3 h3{
+    color: aliceblue;
+}
+.dis3 ol{
+    margin-left: 40px;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic{
+    width: 500px;
+    height: 400px;
+}
+
+
+footer{
+    background-color: gray;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.tech{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
